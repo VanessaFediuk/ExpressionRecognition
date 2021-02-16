@@ -4,7 +4,7 @@ import numpy
 from hmmlearn import hmm
 from feature_extraction import extract_features
 
-dataset_path = '../emotion recognition/trainingData'
+dataset_path = '../ExpressionRecognition-main/ExpressionRecognition-main/emotion recognition/trainingData'
 
 happy_features = []
 angry_features = []
@@ -67,12 +67,12 @@ disgust_model.fit(disgust_features)
 fear_model.fit(fear_features)
 sad_model.fit(sad_features)
 
-pickle.dump(happy_model, open("happy_model.pkl", "wb"))
-pickle.dump(angry_model, open("angry_model.pkl", "wb"))
-pickle.dump(surprise_model, open("surprise_model.pkl", "wb"))
-pickle.dump(disgust_model, open("disgust_model.pkl", "wb"))
-pickle.dump(fear_model, open("fear_model.pkl", "wb"))
-pickle.dump(sad_model, open("sad_model.pkl", "wb"))
+pickle.dump(happy_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/happy_model.pkl", "wb"))
+pickle.dump(angry_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/angry_model.pkl", "wb"))
+pickle.dump(surprise_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/surprise_model.pkl", "wb"))
+pickle.dump(disgust_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/disgust_model.pkl", "wb"))
+pickle.dump(fear_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/fear_model.pkl", "wb"))
+pickle.dump(sad_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/sad_model.pkl", "wb"))
 
 print("models fitted and saved")
 
@@ -104,6 +104,6 @@ emotion_model.transmat_ = numpy.array([[0.5, 0, 0, 0, 0, 0, 0.5],
                         [(1/7), (1/7), (1/7), (1/7), (1/7), (1/7), (1/7)]])
 emotion_model.fit(emotion_features)
 
-pickle.dump(emotion_model, open("emotion_model.pkl", "wb"))
+pickle.dump(emotion_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/emotion_model.pkl", "wb"))
 
 print("emotion-model fitted and saved")
