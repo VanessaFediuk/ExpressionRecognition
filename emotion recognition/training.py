@@ -67,12 +67,12 @@ disgust_model.fit(disgust_features)
 fear_model.fit(fear_features)
 sad_model.fit(sad_features)
 
-pickle.dump(happy_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/happy_model.pkl", "wb"))
-pickle.dump(angry_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/angry_model.pkl", "wb"))
-pickle.dump(surprise_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/surprise_model.pkl", "wb"))
-pickle.dump(disgust_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/disgust_model.pkl", "wb"))
-pickle.dump(fear_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/fear_model.pkl", "wb"))
-pickle.dump(sad_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/sad_model.pkl", "wb"))
+pickle.dump(happy_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/emotion recognition/models/happy_model.pkl", "wb"))
+pickle.dump(angry_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/emotion recognition/models/angry_model.pkl", "wb"))
+pickle.dump(surprise_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/emotion recognition/models/surprise_model.pkl", "wb"))
+pickle.dump(disgust_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/emotion recognition/models/disgust_model.pkl", "wb"))
+pickle.dump(fear_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/emotion recognition/models/fear_model.pkl", "wb"))
+pickle.dump(sad_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/emotion recognition/models/sad_model.pkl", "wb"))
 
 print("models fitted and saved")
 
