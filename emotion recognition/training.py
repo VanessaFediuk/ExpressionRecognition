@@ -104,6 +104,6 @@ emotion_model.transmat_ = numpy.array([[0.5, 0, 0, 0, 0, 0, 0.5],
                         [(1/7), (1/7), (1/7), (1/7), (1/7), (1/7), (1/7)]])
 emotion_model.fit(emotion_features)
 
-pickle.dump(emotion_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/models/emotion_model.pkl", "wb"))
+pickle.dump(emotion_model, open("../ExpressionRecognition-main/ExpressionRecognition-main/emotion recognition/models/emotion_model.pkl", "wb"))
 
 print("emotion-model fitted and saved")
